@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Is It New Year?</title>
+        <link rel="stylesheet" href="{% static 'newyear/style.css' %}">
+    </head>
+    <body>
+        <h1 class="main">Is it new year? 
+        <img height="200" src="https://pluspng.com/img-png/girl-thinking-png-hd-thinking-woman-png-1621.png" alt="">
+
+        </h1>
+        {% if newyear %}
+            <h1>Yes</h1>
+        {% else %}
+            <h1>No</h1>
+        {% endif %}
+    </body>
+</html>
